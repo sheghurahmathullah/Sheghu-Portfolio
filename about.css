@@ -1,0 +1,148 @@
+
+
+.update-about {
+  padding: 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.update-profile-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Space between the image and the text */
+}
+
+.update-profile-image {
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the circle */
+  border: 5px solid #007BFF; /* Optional: Adds a border around the image */
+  animation: drop-in 1s ease-out; /* Applies the drop-in animation */
+}
+
+/* Keyframes for drop-in animation */
+@keyframes drop-in {
+  0% {
+      transform: translateY(-200px); /* Start above the page */
+      opacity: 0; /* Start hidden */
+  }
+  100% {
+      transform: translateY(0); /* End at original position */
+      opacity: 1; /* End visible */
+  }
+}
+
+.update-heading-subtitle {
+  font-size: 16px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 0; /* Remove top margin since we have a separate container for the image */
+}
+
+.update-heading-title {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.update-paragraph {
+  font-size: 16px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  line-height: 1.6;
+}
+
+.update-image-credit {
+  font-size: 12px;
+  color: #999;
+}
+
+.update-image-credit-link {
+  text-decoration: none;
+  color: #555;
+}
+
+.update-services {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.update-service-card {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.update-service-card:hover {
+  transform: translateY(-10px);
+}
+
+.update-icon {
+  font-size: 50px; /* Adjust size as needed */
+  color: #007BFF; /* Adjust color as needed */
+  margin: 0 auto 10px auto;
+  transition: transform 0.3s ease; /* Smooth transition for the animation */
+}
+
+/* Keyframes for animation */
+@keyframes iconAnimation {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+/* Apply animation on hover */
+.update-service-card:hover .update-icon {
+  animation: iconAnimation 0.5s ease-in-out;
+  color: #0056b3; /* Darker shade for hover effect */
+}
+
+.update-service-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.update-more-link {
+  text-decoration: none;
+  color: #007BFF;
+  font-size: 14px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.update-more-link:hover {
+  border-color: #007BFF;
+}
+
+/* Specific Icons (Use icon fonts or SVGs here) */
+.update-graphic-design {
+  background: url('graphic-design-icon.png') no-repeat center/contain;
+}
+
+.update-web-design {
+  background: url('web-design-icon.png') no-repeat center/contain;
+}
+
+.update-software {
+  background: url('software-icon.png') no-repeat center/contain;
+}
+
+.update-application {
+  background: url('application-icon.png') no-repeat center/contain;
+}

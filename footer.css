@@ -1,0 +1,46 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer .container {
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.footer-message {
+  font-style: italic;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.footer-note {
+  margin-bottom: 10px;
+}
+
+.footer-note a {
+  color: #ff6f61;
+  text-decoration: none;
+}
+
+.footer-note a:hover {
+  text-decoration: underline;
+}
+
+.footer-credits {
+  font-size: 0.9em;
+  color: #bbb;
+}
+
+@media (max-width: 600px) {
+  .footer-message {
+    font-size: 1em;
+  }
+
+  .footer-note, .footer-credits {
+    font-size: 0.8em;
+  }
+}

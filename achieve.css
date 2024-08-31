@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/*PEN STYLES*/
+* {
+  box-sizing: border-box;
+}
+
+.achieve-body {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.achieve-card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Basic shadow */
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 1.4;
+  font-family: sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+}
+.achieve-card a {
+  color: inherit;
+}
+.achieve-card a:hover {
+  color: #5ad67d;
+}
+.achieve-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+.achieve-card:hover .achieve-photo {
+  transform: scale(1.3) rotate(3deg);
+}
+.achieve-card .achieve-meta {
+  position: relative;
+  z-index: 0;
+  height: 200px;
+}
+.achieve-card .achieve-photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s, box-shadow 0.3s; /* Added box-shadow transition */
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2); /* Shadow inside photo */
+}
+.achieve-card .achieve-details,
+.achieve-card .achieve-details ul {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+.achieve-card .achieve-details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  margin: auto;
+  transition: left 0.2s;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.achieve-card .achieve-details a {
+  -webkit-text-decoration: dotted underline;
+          text-decoration: dotted underline;
+}
+.achieve-card .achieve-details ul li {
+  display: inline-block;
+}
+.achieve-card .achieve-details .achieve-author:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "";
+}
+.achieve-card .achieve-details .achieve-date:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "";
+}
+.achieve-card .achieve-details .achieve-tags ul:before {
+  font-family: FontAwesome;
+  content: "";
+  margin-right: 10px;
+}
+.achieve-card .achieve-details .achieve-tags li {
+  margin-right: 2px;
+}
+.achieve-card .achieve-details .achieve-tags li:first-child {
+  margin-left: -4px;
+}
+.achieve-card .achieve-description {
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow around description */
+}
+.achieve-card .achieve-description h1,
+.achieve-card .achieve-description h2 {
+  font-family: Poppins, sans-serif;
+}
+.achieve-card .achieve-description h1 {
+  line-height: 1;
+  margin: 0;
+  font-size: 1.7rem;
+}
+.achieve-card .achieve-description h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #a2a2a2;
+  margin-top: 5px;
+}
+.achieve-card .achieve-description .achieve-read-more {
+  text-align: right;
+}
+.achieve-card .achieve-description .achieve-read-more a {
+  color: #5ad67d;
+  display: inline-block;
+  position: relative;
+}
+.achieve-card .achieve-description .achieve-read-more a:after {
+  content: "";
+  font-family: FontAwesome;
+  margin-left: -10px;
+  opacity: 0;
+  vertical-align: middle;
+  transition: margin 0.3s, opacity 0.3s;
+}
+.achieve-card .achieve-description .achieve-read-more a:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+}
+.achieve-card p {
+  position: relative;
+  margin: 1rem 0 0;
+}
+.achieve-card p:first-of-type {
+  margin-top: 1.25rem;
+}
+.achieve-card p:first-of-type:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: #5ad67d;
+  width: 35px;
+  top: -0.75rem;
+  border-radius: 3px;
+}
+.achieve-card:hover .achieve-details {
+  left: 0%;
+}
+@media (min-width: 640px) {
+  .achieve-card {
+    flex-direction: row;
+    max-width: 700px;
+  }
+  .achieve-card .achieve-meta {
+    flex-basis: 40%;
+    height: auto;
+  }
+  .achieve-card .achieve-description {
+    flex-basis: 60%;
+  }
+  .achieve-card .achieve-description:before {
+    transform: skewX(-3deg);
+    content: "";
+    background: #fff;
+    width: 30px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .achieve-card.achieve-alt {
+    flex-direction: row-reverse;
+  }
+  .achieve-card.achieve-alt .achieve-description:before {
+    left: inherit;
+    right: -10px;
+    transform: skew(3deg);
+  }
+  .achieve-card.achieve-alt .achieve-details {
+    padding-left: 25px;
+  }
+}
