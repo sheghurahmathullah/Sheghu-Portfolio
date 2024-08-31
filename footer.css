@@ -1,5 +1,5 @@
 .footer {
-  background-color: #333;
+  background-color: #7d1ccca8;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -22,7 +22,7 @@
 }
 
 .footer-note a {
-  color: #ff6f61;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -32,7 +32,7 @@
 
 .footer-credits {
   font-size: 0.9em;
-  color: #bbb;
+  color: #000000;
 }
 
 @media (max-width: 600px) {

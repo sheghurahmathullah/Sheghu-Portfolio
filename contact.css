@@ -28,9 +28,9 @@
 .contactme h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 2em;
-    border: 1px solid #5161ce;
+    border: 1px solid #7d1ccca8;
     border-radius: 10px;
-    background-color: #5161ce;
+    background-color: #7d1ccca8;
     padding: 20px;
     color: #fff;
     font-weight: 500;
@@ -104,7 +104,7 @@
     height: 50px;
     border-radius: 4px;
     border: 1px solid #333;
-    background: #5161ce;
+    background: #7d1ccca8;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
