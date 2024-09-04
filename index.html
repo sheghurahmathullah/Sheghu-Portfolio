@@ -318,71 +318,76 @@
   <div class="section-title-custom text-center-custom mt-5">
     <h2>PROJECTS</h2>
   </div>
-  <div class="unique-body d-flex justify-content-center align-items-center mt-5">
-    <div class="unique-options">
-      <div class="unique-option active" style="--optionBackground:url(project1.png);">
-        <div class="unique-shadow"></div>
-        <div class="unique-label">
-          <div class="unique-icon">
-            <i class="fas fa-walking"></i>
-          </div>
-          <div class="unique-info">
-            <div class="unique-main">E-COMMERCE WEBSITE</div>
-            <div class="unique-sub">"Ramadan Kareem"</div>
-          </div>
-        </div>
-      </div>
-      <div class="unique-option" style="--optionBackground:url(project2.jpg);">
-        <div class="unique-shadow"></div>
-        <div class="unique-label">
-          <div class="unique-icon">
-            <i class="fas fa-snowflake"></i>
-          </div>
-          <div class="unique-info">
-            <div class="unique-main">COMPANY WEBSITE</div>
-            <div class="unique-sub">"Botnine"</div>
-          </div>
-        </div>
-      </div>
-      <div class="unique-option" style="--optionBackground:url(https://media.licdn.com/dms/image/v2/D5622AQEaPSmV71dzcA/feedshare-shrink_1280/feedshare-shrink_1280/0/1719559160780?e=1727913600&v=beta&t=ASZEek-G3nw_EdLY2D-OUUbkeGdiPhX5jZ19RqFTp3g);">
-        <div class="unique-shadow"></div>
-        <div class="unique-label">
-          <div class="unique-icon">
-            <i class="fas fa-tree"></i>
-          </div>
-          <div class="unique-info">
-            <div class="unique-main">FOOD WEBSITE</div>
-            <div class="unique-sub">"Smarteen"</div>
-          </div>
-        </div>
-      </div>
-      <div class="unique-option" style="--optionBackground:url(project4.png);">
-        <div class="unique-shadow"></div>
-        <div class="unique-label">
-          <div class="unique-icon">
-            <i class="fas fa-tint"></i>
-          </div>
-          <div class="unique-info">
-            <div class="unique-main">OWN PORTFOLIO</div>
-            <div class="unique-sub">"Sheghu's Portfolio"</div>
-          </div>
-        </div>
-      </div>
-      <div class="unique-option" style="--optionBackground:url(https://media.licdn.com/dms/image/D5622AQHMQ8GSSsphuQ/feedshare-shrink_1280/0/1705636172130?e=1725494400&v=beta&t=vLa-hCPHExe2jllVUkaUVhFCG2RA-q7BdNXzl2hfOXk);">
-        <div class="unique-shadow"></div>
-        <div class="unique-label">
-          <div class="unique-icon">
-            <i class="fas fa-sun"></i>
-          </div>
-          <div class="unique-info">
-            <div class="unique-main">CLUB WEBSITE</div>
-            <div class="unique-sub">"IETE Chennai"</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 </section>
+
+
+<section>
+    <!-- Project Carousel -->
+    <div id="project-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#project-carousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#project-carousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#project-carousel" data-bs-slide-to="2"></li>
+            <li data-bs-target="#project-carousel" data-bs-slide-to="3"></li>
+            <li data-bs-target="#project-carousel" data-bs-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <!-- First item should have "active" class -->
+            <div class="carousel-item active">
+                <a href="">
+                    <img src="project1.png" alt="Responsive Image" class="d-block w-100">
+                   
+                </a>
+            </div>
+
+            <!-- All other items should NOT have the "active" class -->
+          
+
+            <div class="carousel-item">
+                <a href="">
+                    <img src="project2.jpg" alt="Responsive Image" class="d-block w-100">
+                   
+                </a>
+            </div>
+
+            <div class="carousel-item">
+                <a href="">
+                    <img src="https://media.licdn.com/dms/image/D5622AQHMQ8GSSsphuQ/feedshare-shrink_1280/0/1705636172130?e=1725494400&v=beta&t=vLa-hCPHExe2jllVUkaUVhFCG2RA-q7BdNXzl2hfOXk" alt="Responsive Image" class="d-block w-100">
+                    
+                </a>
+            </div>
+
+            <div class="carousel-item">
+                <a href="">
+                    <img src="project4.png" alt="Responsive Image" class="d-block w-100">
+                 
+                </a>
+            </div>
+
+            <div class="carousel-item">
+                <a href="https://bootstrapcreative.com/">
+                    <img src="https://media.licdn.com/dms/image/v2/D5622AQEaPSmV71dzcA/feedshare-shrink_1280/feedshare-shrink_1280/0/1719559160780?e=1727913600&v=beta&t=ASZEek-G3nw_EdLY2D-OUUbkeGdiPhX5jZ19RqFTp3g" alt="Responsive Image" class="d-block w-100">
+                    
+                </a>
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <a class="carousel-control-prev" href="#project-carousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </a>
+        <a class="carousel-control-next" href="#project-carousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </a>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</section>
+
 
 
 

@@ -1,194 +1,27 @@
-.unique-body {
-   width: 100vw;
-   margin: 0;
-   font-family: 'Roboto', sans-serif;
-   background: white;
-   color: white;
-   transition: .25s;
+
+  /* Ensures carousel background color */
+  .carousel {
+   background: #444;
 }
 
-.unique-credit {
-   position: absolute;
-   bottom: 20px;
-   left: 20px;
-   color: inherit;
+/* Forces image to be 100% width and auto height */
+.carousel-item img {
+   width: 100%;
+   height: auto;
 }
 
-.unique-options {
-   display: flex;
-   flex-direction: row;
-   align-items: center; /* Adjusted to center items vertically */
-   overflow: hidden;
-   min-width: 600px;
-   max-width: 900px;
-   width: calc(100% - 100px);
-   height: 400px;
-   position: relative; /* Added to manage positioning of child elements */
+/* Ensures full width of anchor tags */
+.carousel-item a {
+   display: block;
+   width: 100%;
 }
 
-@media screen and (max-width: 718px) {
-   .unique-options {
-       min-width: 520px;
-   }
-   .unique-option:nth-child(5) {
-       display: none;
-   }
+/* Align carousel captions */
+.carousel-caption {
+   text-align: center;
 }
 
-@media screen and (max-width: 638px) {
-   .unique-options {
-       min-width: 440px;
-   }
-   .unique-option:nth-child(4) {
-       display: none;
-   }
-}
-
-@media screen and (max-width: 558px) {
-   .unique-options {
-       min-width: 360px;
-   }
-   .unique-option:nth-child(3) {
-       display: none;
-   }
-}
-
-@media screen and (max-width: 478px) {
-   .unique-options {
-       min-width: 280px;
-   }
-   .unique-option:nth-child(2) {
-       display: none;
-   }
-}
-
-.unique-option {
-   position: relative;
-   overflow: hidden;
-   flex: 1 0 auto; /* Ensures items grow and shrink as needed */
-   margin: 10px;
-   background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
-   background-size: cover; /* Ensures background image covers the area */
-   background-position: center;
-   background-repeat: no-repeat; /* Prevents tiling */
-   cursor: pointer;
-   transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-   height: 100%; /* Ensures the item takes the full height of the container */
-}
-
-/* Manually replaced loop for default background colors */
-.unique-option:nth-child(1) {
-   --defaultBackground: #FFB6C1; /* Replace with your first color */
-}
-
-.unique-option:nth-child(2) {
-   --defaultBackground: #87CEFA; /* Replace with your second color */
-}
-
-.unique-option:nth-child(3) {
-   --defaultBackground: #98FB98; /* Replace with your third color */
-}
-
-.unique-option:nth-child(4) {
-   --defaultBackground: #FFD700; /* Replace with your fourth color */
-}
-
-/* Active and inactive states */
-.unique-option.active {
-   flex-grow: 10000;
-   transform: scale(1);
-   max-width: 600px;
-   margin: 0;
-   border-radius: 40px;
-   background-size: cover; /* Ensures background image is fully covered */
-}
-
-.unique-option:not(.active) {
-   flex-grow: 1;
-   border-radius: 30px;
-}
-
-/* Shadow styling */
-.unique-shadow {
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   height: 120px;
-   transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-}
-
-.unique-option.active .unique-shadow {
-   box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
-}
-
-.unique-option:not(.active) .unique-shadow {
-   bottom: -40px;
-   box-shadow: inset 0 -120px 0 -120px black, inset 0 -120px 0 -100px black;
-}
-
-/* Label styling */
-.unique-label {
-   display: flex;
-   position: absolute;
-   right: 0;
-   height: 40px;
-   transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-}
-
-.unique-option.active .unique-label {
-   bottom: 20px;
-   left: 20px;
-}
-
-.unique-option:not(.active) .unique-label {
-   bottom: 10px;
-   left: 10px;
-}
-
-/* Icon styling */
-.unique-icon {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   min-width: 40px;
-   max-width: 40px;
-   height: 40px;
-   border-radius: 100%;
-   background-color: white;
-   color: var(--defaultBackground);
-}
-
-/* Info styling */
-.unique-info {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   margin-left: 10px;
-   color: white;
-   white-space: pre;
-}
-
-.unique-info > div {
-   position: relative;
-   transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity .5s ease-out;
-}
-
-.unique-option.active .unique-info > div {
-   left: 0;
-   opacity: 1;
-}
-
-.unique-option:not(.active) .unique-info > div {
-   left: 20px;
-   opacity: 0;
-}
-
-.unique-main {
-   font-weight: bold;
-   font-size: 1.2rem;
-}
-
-.unique-sub {
-   transition-delay: .1s;
+/* Button styling for consistency */
+.carousel-caption .btn {
+   margin-top: 15px;
 }
